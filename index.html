@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Cat Clicker 3</title>
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Cat Clicker Premium</h1>
+
+        <div class="d-flex justify-content-center align-items-start gap-3 flex-wrap">
+
+            <!-- Tarjeta de la lista -->
+            <div class="card" style="width: 12rem;">
+                <div class="card-header fw-bold">Gatos</div>
+                <ul id="cat-list" class="list-group list-group-flush"></ul>
+            </div>
+
+            <!-- Tarjeta del gato -->
+            <div id="cat-display" class="card text-center p-3" style="width: 20rem;">
+                <img id="cat-img" class="card-img-top" src="" alt="" style="cursor: pointer;">
+                <h2 id="cat-name"></h2>
+                <p>Clicks: <span id="cat-clicks">0</span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
