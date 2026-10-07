@@ -2,11 +2,11 @@
 let data =  {
     catActive: 0,
     gatos: [
-        { name: "Manuel",   image: "cat1.jpg",  nclicks: 0 },
-        { name: "Gato Marciano",   image: "cat2.jpg",  nclicks: 0 },
-        { name: "Gatendrik Lamer",   image: "cat3.jpg",  nclicks: 0 },
-        { name: "Gato Soviético",   image: "cat4.jpg",  nclicks: 0 },
-        { name: "Gato Fresa",   image: "cat5.jpg",  nclicks: 0 }
+        { name: "Manuel",   image: "resources/cat1.jpg",  nclicks: 0 },
+        { name: "Gato Marciano",   image: "resources/cat2.jpg",  nclicks: 0 },
+        { name: "Gatendrik Lamer",   image: "resources/cat3.jpg",  nclicks: 0 },
+        { name: "Gato Soviético",   image: "resources/cat4.jpg",  nclicks: 0 },
+        { name: "Gato Fresa",   image: "resources/cat5.jpg",  nclicks: 0 }
     ]
 };
 
@@ -48,7 +48,5 @@ data.gatos.forEach(function (gato, index){
 // Clic en la foto -> suma al gato activo
 img.addEventListener('click', function(){
     data.gatos[data.catActive].nclicks++;
-    renderCat();
+    renderCat(data.catActive);
 });
-
-renderCat();
